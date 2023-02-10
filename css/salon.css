@@ -1,0 +1,151 @@
+/*page salon*/
+.salon{
+  text-align: center;
+  line-height: 1em;
+  padding: 1em;
+}
+#salon{
+  background-image:url('../images/photos/coupe-miroir.jpg');
+  background-size: cover;
+  width:100%;
+  /*min-height:800px; */
+  background-repeat: no-repeat;
+}
+#padding_texte{
+  padding-bottom: 2em;
+}
+.bloc_salon{
+  padding: 0 2em;
+  text-align: center;
+}
+.margin_bottom{
+  margin-bottom:2.5em;
+  font-style: italic;
+}
+.bloc_services{
+  padding: 0 2em;
+  text-align: center;
+}
+.piou{
+  margin: 0 auto;
+  max-width: 60ch;
+}
+.bloc_reviews{
+  text-align: center;
+}
+.double_volet{
+    display: grid;
+    gap: 1em;
+    margin: 1em auto;
+ }
+ img{
+    max-height:auto;
+    width: 550px;
+ }
+ .gd_pt{
+    grid-template-columns: 3fr 2fr;
+}
+.pt_gd{
+    grid-template-columns: 2fr 3fr;
+}
+.centrage{
+  margin: 0 auto;
+  max-width: 40ch;
+}
+ul{
+  list-style: none;
+  padding:0px;
+  margin:0px;
+}
+ul li{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gauche{
+  text-align: left;
+}
+.droite{
+  text-align: right;
+}
+
+
+/*slider*/
+
+#photos{
+  position: relative;
+  width: 800px;
+  height: 360px;
+  overflow: hidden; /*pour ne pas voir ce qui dépasse de la zone prédéfinie, ici 360px par photos*/
+  margin: 20px auto;
+}
+.picture{
+  width: 800px;
+}
+
+#slideshow li{
+  display: inline;
+}
+#slideshow{
+  position: absolute;
+  top: 0;  /*pour aligner en haut à gauche dans mon exercice*/
+  left: 0;
+  width: 4800px;   /*6photos de 800px -- 6x800px=4800px*/
+  margin: 0;
+  padding: 0;
+  animation-name: slider;
+  animation-duration: 30s;
+  animation-iteration-count: infinite; /*jamais de temps d'arrêt*/
+  animation-timing-function: linear;
+}
+@keyframes slider {
+  0%  {left: 0px;}
+  10% {left: 0px;}    /* pour qu'il fasse un temps d'arrêt*/
+  20% {left: -800px;}
+  30% {left: -800px;}     /* pour qu'il fasse un temps d'arrêt*/
+  40% {left: -1600px;}
+  50% {left: -1600px;}    /* pour qu'il fasse un temps d'arrêt*/
+  60% {left: -2400px;}
+  70% {left: -2400px;}    /* pour qu'il fasse un temps d'arrêt*/
+  80% {left: -3200px;}
+  90% {left: -3200px;}
+  100% {left: -4000px;}
+}
+
+/*
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;        
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 1em;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.6s ease;
+}
+.prev{ left: 15px; }
+.next { right: 15px; }
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+.slide-dot{ text-align: center; }
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 1em;
+}
+.active, .dot:hover { background-color: #111111; }
+
+*/

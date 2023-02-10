@@ -1,0 +1,10 @@
+h3{
+    background-color: hsl(22, 97%, 90%);
+    padding: 0.5em 1em;
+}
+.prix{
+    margin: 0 auto;
+    max-width: 100ch;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+}
