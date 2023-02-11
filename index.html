@@ -14,9 +14,9 @@
 <body>
     <header>
         <section>
-            <button class="rdv"><a href="tel:+3224450522">
+            <div ><a class="rdv" href="tel:+3224450522">
                 Prendre rendez-vous</a>
-            </button>
+            </div>
             <img id="lampes" src="images/photos/lampes-bis.webp" alt="logo du coiffeur Haircoholix">
             <span class="espacement">
                 <span><a href="https://www.instagram.com/haircoholixbxl/?hl=fr" target="_blank"><iconify-icon icon="logos:instagram" height="1.5em"></iconify-icon></a></span>
@@ -28,27 +28,30 @@
         <hr>       
     </header>
     <nav>
-        <a href="salon.html">Le salon</a>
+        <a href="index.html">Le salon</a>
         <a href="prix.html">Nos services</a>
         <a href="photo.html">Portfolio</a>
-        <a href="#reviews" target="#reviews">Reviews</a>
-        <a href="#contact" target="#contact">Contact</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
     </nav>
     <main>       
         <div id="photos">
             <ul id="slideshow">
                 <li class="custom-slider"><img class="picture" src="images/photos/bras-ciseaux.webp"></li><li class="custom-slider"><img class="picture" src="images/photos/outside.jpg"></li><li class="custom-slider"><img class="picture" src="images/photos/lampes.webp"></li><li class="custom-slider"><img class="picture" src="images/photos/portfolio1.PNG"></li><li class="custom-slider"><img class="picture" src="images/photos/sechage.webp"></li><li><img class="picture" src="images/photos/bras-ciseaux.webp"></li>
             </ul>
+        </div>
     <div class="interbloc"></div>
     <!--le salon-->
         <div class="double_volet gd_pt">
-            <div  style="background-image:url('images/photos/coupe-miroir.jpg'); width:100%;min-height:500px;"></div>
-                <div class="bloc_salon">
+            <div  style="background-image:url('images/photos/coupe-miroir.jpg'); width:100%;min-height:500px;">
+            </div>
+            <div class="bloc_salon">
+                <section>
                     <h2 class="salon">Le salon</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla quo voluptatum repellendus, numquam delectus recusandae doloremque ad expedita aperiam eos provident aut ipsam nemo facilis, reiciendis illum assumenda cum.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla quo voluptatum repellendus, numquam delectus recusandae doloremque ad expedita aperiam eos provident aut ipsam nemo facilis, reiciendis illum assumenda cum.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla quo voluptatum repellendus, numquam delectus recusandae doloremque ad expedita aperiam eos provident aut ipsam nemo facilis, reiciendis illum assumenda cum.</p>
-                </section>             
+                </section>              
             </div>
         </div>
     <div class="interbloc"></div>
@@ -69,19 +72,20 @@
                 </div>
                 <div><img  src="images/photos/after.jpg" alt="photo de cheveux avant-après"></div>
             </div>
-    <div class="interbloc"></div>        
-    <les reviews quand cela fonctionnera-->
- <!--      <div class="double_volet pt_gd"> 
-            <div><img  src="images/photos/before-ext.jpg" alt="photo de cheveux avant-après"></div>
-            <div class="bloc_reviews">
-                <h2 class="salon">Reviews</h2>
-                <img src="images/reviews1.PNG" alt="google reviews">
-            </div>
-        </div>            
-    <div class="interbloc"></div>
-    -->
+    <div class="interbloc"></div>  
+
+   <!--les reviews quand cela fonctionnera-->
+        <div class="double_volet pt_gd" id="reviews"> 
+                <div><img  src="images/photos/before-ext.jpg" alt="photo de cheveux avant-après"></div>
+                <div class="bloc_reviews">
+                    <h2 class="salon">Reviews</h2>
+                    <img src="images/reviews1.PNG" alt="google reviews">
+                </div>
+            </div>            
+        <div class="interbloc"></div>
+    
         <!--contact-->    
-            <div class="double_volet pt_gd"> 
+            <div class="double_volet pt_gd" id="contact"> 
                 <section>
                     <h2 class="salon">Contact</h2>
                     <br>
@@ -114,9 +118,9 @@
     <footer>
         <hr>
         <section>
-            <button class="rdv"><a href="tel:+3224450522">
+            <div><a class="rdv" href="tel:+3224450522">
                 Prendre rendez-vous</a>
-            </button>
+            </div>
             <span class="espacement">
                 <span><a href="https://www.instagram.com/haircoholixbxl/?hl=fr" target="_blank"><iconify-icon icon="logos:instagram" height="1.5em"></a></iconify-icon></span>
                 <span><a href="https://www.facebook.com/haircoholixBXL/" target="_blank"><iconify-icon icon="logos:facebook" height="2em"></a></iconify-icon></span>

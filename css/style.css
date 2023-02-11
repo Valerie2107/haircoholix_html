@@ -39,28 +39,22 @@ header section{
     width: 1.5%;
 }
 .rdv{
-    color: #2e2e2e59;
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 0.8em;
+    color: #0c0c0cc5;
     padding: 1em 1.5em;
-    /*border: 2px solid #2e2e2e59;*/
+    border: 2px solid #2e2e2e59;
     border-radius: 8px;
     transition: background 0.3s ease-in-out;
+    text-decoration: none;
+    
 }
 .rdv:hover{
-    opacity: 0.5;
     background-color: hsl(22, 97%, 59%);
     color: white;
-}
-.rdv:hover a{
-    color: white;
-}
-.rdv a{
-    text-decoration: none;
-    color: #0c0c0cc5;
 }
 #lampes{
     width: 200px;
@@ -80,9 +74,9 @@ nav{
     margin: 0 3em;
     top: 0;
     position:sticky;
-
     font-size: large;
     font-weight: bold;
+    color: #2e2e2e59;
     background-color: white;  
     z-index: 10;
 }
@@ -91,6 +85,7 @@ nav a{
     color: #0c0c0cc5;
     padding: 0.5em 1em;
     transition: background 0.3s ease-in-out;
+    border: 2px solid transparent;
     border-radius: 10px;
 }
 nav a:hover{
