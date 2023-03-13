@@ -1,14 +1,24 @@
-/*photos*/
-.conteneur{
+/* photos */
+.conteneur {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-.box img{
+@media screen and (min-width: 760px) {
+    .conteneur {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+.box img {
     width: 100%;
     max-height: 550px;
 }
-.box{
+.box {
     width: 100%;
     overflow: hidden;
+}
+
+.thumb {
+    width:350px;
+    height:200px;
 }

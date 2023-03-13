@@ -1,4 +1,4 @@
-/*page salon*/
+/* page salon */
 .salon{
   text-align: center;
   line-height: 1em;
@@ -36,21 +36,31 @@
 .bloc_reviews{
   text-align: center;
 }
-.double_volet{
-    display: grid;
-    gap: 1em;
-    margin: 1em auto;
- }
- img{
-    max-height:auto;
-    width: 550px;
- }
- .gd_pt{
+
+
+@media screen and (min-width: 760px){
+  .gd_pt{
     grid-template-columns: 3fr 2fr;
-}
-.pt_gd{
+  }
+  .pt_gd{
     grid-template-columns: 2fr 3fr;
+  }
 }
+
+.double_volet{
+  display: grid;
+  gap: 1em;
+  margin: 1em auto;
+}
+
+img{
+  max-height:auto;
+  /* width: 550px; */
+} /* certainly not all image must have 550px of width :) */
+
+
+
+
 .centrage{
   margin: 0 auto;
   max-width: 40ch;
@@ -76,13 +86,20 @@ ul li{
 
 #photos{
   position: relative;
-  width: 800px;
-  height: 360px;
+  width:100%;
+  max-width: 800px;
+  /* hack pour conserver le ratio */
+  height: 0px;
+  padding-bottom:45%;
+  /* fin du hack */
   overflow: hidden; /*pour ne pas voir ce qui dépasse de la zone prédéfinie, ici 360px par photos*/
   margin: 20px auto;
 }
+
+
 .picture{
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
 #slideshow li{
