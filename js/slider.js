@@ -1,4 +1,4 @@
-var slideIndex = 1;
+/*var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -23,7 +23,7 @@ function showSlides(n) {
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      /* ! Il y a une erreur à gérer ici */
+      ! Il y a une erreur à gérer ici 
       try{
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
@@ -31,5 +31,5 @@ function showSlides(n) {
         console.error("Une erreur est survenue :(");
         console.log(e);
       }
-/* ! Fin de l'erreur */
-    }
+/* ! Fin de l'erreur 
+    } */

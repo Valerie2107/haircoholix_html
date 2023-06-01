@@ -56,7 +56,16 @@ header section {
 	padding: 1em;
 	width: 1.5%;
 }
-
+@media screen and (max-width: 760px) {
+	.espacement{
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 760px) {
+	.espacement span{
+		padding: 0.5em;
+	}
+}
 
 .rdv {
 	background-color: #ffffff;
@@ -76,7 +85,11 @@ header section {
 	background-color: #fc7b31; /* hsl(22, 97%, 59%) */
 	color: white;
 }
-
+@media screen and (max-width: 760px) {
+	.rdv{
+		margin-bottom: 10px;
+	}
+}
 
 
 /* Logo */
@@ -132,7 +145,12 @@ nav a:hover {
 	color: white;
 	border: 2px solid #2e2e2e59;
 }
-
+@media screen and (max-width: 760px) {
+	nav a{
+		padding: 0;
+		margin: 0 auto;
+	}
+}
 /*main général*/
 main {
 	padding:3em;
@@ -140,7 +158,12 @@ main {
 	flex-grow: 1; 
 	width:100%;
 }
-
+@media screen and (max-width: 760px) {
+	main{
+		padding: 0.5em;
+		margin: 0 auto;
+	}
+}
 h1 {
 	text-align: center;
 	font-size: 3em;
@@ -166,6 +189,11 @@ footer section {
 @media screen and (min-width: 760px) {
 	footer section {
 		flex-direction: row;
+	}
+}
+@media screen and (max-width: 760px) {
+	footer section {
+		flex-direction: column;
 	}
 }
 #btt {
