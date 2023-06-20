@@ -22,19 +22,39 @@
   margin-bottom:2.5em;
   font-style: italic;
 }
+@media screen and (max-width: 760px){
+  .bloc_salon{
+    padding: 0 1em;
+  }
+}
+
 .bloc_services{
   padding: 0 2em;
   text-align: center;
 }
+@media screen and (max-width: 760px){
+  .bloc_services{
+    padding: 0 1em;
+  }
+}
+
 .piou{
   margin: 0 auto;
   max-width: 60ch;
 }
 .piou li{
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
 }
 .bloc_reviews{
   text-align: center;
+}
+@media screen and (max-width: 760px){
+  .bloc_reviews{
+    padding: 0 1em;
+  }
 }
 
 
@@ -80,6 +100,20 @@ ul li{
 .droite{
   text-align: right;
 }
+@media screen and (max-width: 760px){
+  .centrage{
+    padding: 0 1em;
+  }
+  .centrage address{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px){
+  #map{
+    height: 400px;
+  }
+}
+
 
 
 /*slider*/
